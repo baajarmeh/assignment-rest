@@ -9,16 +9,17 @@
 - [Response Codes](#response-codes)
 - [Pre-requisite](#pre-requisite)
 - [Local Build](#local-build)
-- [Run Junits](#run-junits)
-
+- [Run JUnits](#run-junits)
 
 ## Description
+
 Rest interface that allows searching of handset details by providing required criteria as part of query parameters.
 
 ## Architecture
 
 - This service developed using Spring Boot which allowed easy injection of dependent objects using Spring IOC. Internally uses Spring RestTemplate to fetch details details service.
 
+![Use Case Diagram](https://github.com/baajarmeh/assignment-rest/blob/master/user-case.png?raw=true)
 
 ## Endpoints and URL
 
@@ -47,7 +48,7 @@ Rest interface that allows searching of handset details by providing required cr
 
 ## Pre-requisite
 
-- Java 8
+- Java 8, Spring Boot 2.3
 
 This service can run locally after checking out code from github using both **gradle <TASK>** and general **java -jar** as below. As gradle doc suggests, service is build using wrapper to ensure reliable and standardized execution of build. Depending of Operating system we can run serice with gradle.bat or gradlew.
 
